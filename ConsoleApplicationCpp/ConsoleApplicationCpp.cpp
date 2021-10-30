@@ -1,15 +1,26 @@
 ﻿#include <iostream>
 
-using namespace std;
-
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	int homeWorkNumber{};
+	std::cout << "Please enter the home work number:";
 
-	int a = 0;
+	std::cin >> homeWorkNumber;
 
-	cout << "Введите любое 4-ех значное число: ";
-	cin >> a;
-	a = (a - (a / 100) * 100) / 10;
-	cout << "Результат: " << a << endl;
+	if (homeWorkNumber == 1)
+	{
+		//HW 1
+	}
+	else if (homeWorkNumber == 2)
+	{
+		//HW 2
+	}
+	else if (homeWorkNumber == 3)
+	{
+		//HW 3
+	}
+	else
+	{
+		std::cout << "Incorrect number!";
+	}
 }
